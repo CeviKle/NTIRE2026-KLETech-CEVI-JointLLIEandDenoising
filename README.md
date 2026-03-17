@@ -16,7 +16,7 @@ conda activate mst
 ## 2. Clone the Repository
 
 ```bash
-[git clone https://github.com/your-username/your-repo-name.git](https://github.com/CeviKle/NTIRE2026-KLETech-CEVI-JointLLIEandDenoising.git)
+[git clone https://github.com/CeviKle/NTIRE2026-KLETech-CEVI-JointLLIEandDenoising.git
 cd NTIRE2026-KLETech-CEVI-JointLLIEandDenoising
 ```
 

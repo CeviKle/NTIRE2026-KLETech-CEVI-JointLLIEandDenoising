@@ -100,9 +100,6 @@ python basicsr/train.py --opt options/MST_Plus_Plus_NTIRE_8x1150.yml
 To run testing on the NTIRE dataset:
 
 ```bash
-python Enhancement/test_from_dataset.py \
---opt options/MST_Plus_Plus_NTIRE_8x1150.yml \
---weights path_to_trained_model.pth \
---dataset NTIRE
+python Enhancement/test_from_dataset.py --opt options/MST_Plus_Plus_NTIRE_8x1150.yml --weights pre-trained_weights/net_g_90000.pth --dataset NTIRE
 ```
 

@@ -59,6 +59,13 @@ network_g:
 
 # path
 path:
+  root: /NTIRE2026/runs/c8_jointdenoisingllie/NTIRE2026-KLETech-CEVI-JointLLIEandDenoising
+
+  experiments_root: /NTIRE2026/runs/c8_jointdenoisingllie/NTIRE2026-KLETech-CEVI-JointLLIEandDenoising/experiments
+  models: /NTIRE2026/runs/c8_jointdenoisingllie/NTIRE2026-KLETech-CEVI-JointLLIEandDenoising/experiments/models
+  training_states: /NTIRE2026/runs/c8_jointdenoisingllie/NTIRE2026-KLETech-CEVI-JointLLIEandDenoising/experiments/training_states
+  log: /NTIRE2026/runs/c8_jointdenoisingllie/NTIRE2026-KLETech-CEVI-JointLLIEandDenoising/experiments/log
+
   pretrain_network_g: ~
   strict_load_g: true
   resume_state: ~

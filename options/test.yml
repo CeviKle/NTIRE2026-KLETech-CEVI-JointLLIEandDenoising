@@ -1,0 +1,63 @@
+# general settings
+name: MST_Plus_Plus_TEST
+model_type: ImageCleanModel
+scale: 1
+num_gpu: 0
+manual_seed: 100
+
+############################################
+# dataset
+############################################
+
+datasets:
+  val:
+    name: TestSet
+    type: Dataset_SingleImage
+    dataroot_lq: /NTIRE2026/C8_JointDenoisingLLIE/testing/Unpair
+    io_backend:
+      type: disk
+
+############################################
+# network
+############################################
+
+network_g:
+  type: MST_Plus_Plus
+  in_channels: 3
+  out_channels: 3
+  n_feat: 30
+  stage: 3
+
+############################################
+# load model
+############################################
+
+path:
+  pretrain_network_g: experiments/MST_Plus_Plus_NTIRE_8x1150/models/net_g_90000.pth
+  strict_load_g: true
+
+############################################
+# REQUIRED train block (even for testing)
+############################################
+
+train:
+  mixing_augs:
+    mixup: false
+
+############################################
+# validation / testing
+############################################
+
+val:
+  window_size: 4
+  save_img: true
+  rgb2bgr: true
+  use_image: true
+
+############################################
+# logging
+############################################
+
+logger:
+  print_freq: 100
+  use_tb_logger: false
